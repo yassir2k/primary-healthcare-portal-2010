@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F12121B1-5F9B-4419-8B05-5D3FEE5C40F1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>nphc</RootNamespace>
+    <AssemblyName>nphc</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.0.30512.17815, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="adminBanner.png" />
+    <Content Include="administratorpage.aspx" />
+    <Content Include="ALERT.GIF" />
+    <Content Include="App_Data\ASPNETDB.MDF">
+    </Content>
+    <Content Include="App_Data\ASPNETDB_log.ldf">
+      <DependentUpon>ASPNETDB.MDF</DependentUpon>
+    </Content>
+    <Content Include="banner.jpg" />
+    <Content Include="bar.png" />
+    <Content Include="basicconfirmpage.aspx" />
+    <Content Include="basicoptions.aspx" />
+    <Content Include="basicreportdisplaypage.aspx" />
+    <Content Include="basicreportpage.aspx" />
+    <Content Include="basicspecialcases.aspx" />
+    <Content Include="basicsuccesspage.aspx" />
+    <Content Include="bin\AjaxControlToolkit.DLL" />
+    <Content Include="confirmpage.aspx" />
+    <Content Include="Footer.png" />
+    <Content Include="index.aspx" />
+    <Content Include="loginBar.png" />
+    <Content Include="logoicon.PNG" />
+    <Content Include="medicalIncident.png" />
+    <Content Include="menu.png" />
+    <Content Include="myCss.css" />
+    <Content Include="newUser.png" />
+    <Content Include="optionspage.aspx" />
+    <Content Include="PHC.jpg" />
+    <Content Include="reportdisplaypage.aspx" />
+    <Content Include="reportpage.aspx" />
+    <Content Include="siteReport.png" />
+    <Content Include="specialcases.aspx" />
+    <Content Include="specialCases.png" />
+    <Content Include="successpage.aspx" />
+    <Content Include="useraddedpage.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="administratorpage.aspx.cs">
+      <DependentUpon>administratorpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="administratorpage.aspx.designer.cs">
+      <DependentUpon>administratorpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="basicconfirmpage.aspx.cs">
+      <DependentUpon>basicconfirmpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="basicconfirmpage.aspx.designer.cs">
+      <DependentUpon>basicconfirmpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="basicoptions.aspx.cs">
+      <DependentUpon>basicoptions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="basicoptions.aspx.designer.cs">
+      <DependentUpon>basicoptions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="basicreportdisplaypage.aspx.cs">
+      <DependentUpon>basicreportdisplaypage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="basicreportdisplaypage.aspx.designer.cs">
+      <DependentUpon>basicreportdisplaypage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="basicreportpage.aspx.cs">
+      <DependentUpon>basicreportpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="basicreportpage.aspx.designer.cs">
+      <DependentUpon>basicreportpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="basicspecialcases.aspx.cs">
+      <DependentUpon>basicspecialcases.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="basicspecialcases.aspx.designer.cs">
+      <DependentUpon>basicspecialcases.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="basicsuccesspage.aspx.cs">
+      <DependentUpon>basicsuccesspage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="basicsuccesspage.aspx.designer.cs">
+      <DependentUpon>basicsuccesspage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="confirmpage.aspx.cs">
+      <DependentUpon>confirmpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="confirmpage.aspx.designer.cs">
+      <DependentUpon>confirmpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="optionspage.aspx.cs">
+      <DependentUpon>optionspage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="optionspage.aspx.designer.cs">
+      <DependentUpon>optionspage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reportdisplaypage.aspx.cs">
+      <DependentUpon>reportdisplaypage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reportdisplaypage.aspx.designer.cs">
+      <DependentUpon>reportdisplaypage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportpage.aspx.cs">
+      <DependentUpon>reportpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reportpage.aspx.designer.cs">
+      <DependentUpon>reportpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="specialcases.aspx.cs">
+      <DependentUpon>specialcases.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="specialcases.aspx.designer.cs">
+      <DependentUpon>specialcases.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="successpage.aspx.cs">
+      <DependentUpon>successpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="successpage.aspx.designer.cs">
+      <DependentUpon>successpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="useraddedpage.aspx.cs">
+      <DependentUpon>useraddedpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="useraddedpage.aspx.designer.cs">
+      <DependentUpon>useraddedpage.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3423</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
